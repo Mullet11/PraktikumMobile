@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/casino_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResultMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="#B3000000"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutDadu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="JACKPOT!" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDadu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgDice1"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="8dp"
+            android:src="@drawable/dice_0" />
+
+        <ImageView
+            android:id="@+id/imgDice2"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="8dp"
+            android:elevation="8dp"
+            android:src="@drawable/dice_0" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRoll"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#D4AF37"
+        android:elevation="8dp"
+        android:text="ROLL DADU"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutDadu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
