@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Praktikum_Modul1_Compose</string>
+    <string name="bg_casino_description">BG CASINO</string>
+    <string name="dice_1_description">Dice 1</string>
+    <string name="dice_2_description">Dice 2</string>
+    <string name="jackpot_message">Selamat, Anda dapat dadu double!</string>
+    <string name="try_again_message">Anda belum Beruntung!\nCoba lagi.</string>
+    <string name="roll_button_text">ROLL DADU</string>
+</resources>
